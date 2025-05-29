@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .border-boxv{
+        border: 0.5px solid grey;
+        padding-left:5px;
+        padding-top:5px;
+        padding-right:5px;
+        padding-bottom:none;
+    }
+
+     .border-boxh{
+        border: 0.5px solid grey;
+        padding-left:5px;
+        padding-top:5px;
+        padding-right:none;
+        padding-bottom:5px;
+    }
+    /* Vertical nav bar */
+    .vertical {
+      width: 200px;
+      background-color: lightblue;
+    }
+    .vertical a {
+      display: block;
+      text-decoration: none;
+      font-size: 18px;
+      padding:7px;
+    }
+    .vertical a:first-child {
+      background-color: orange;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Horizontal nav bar */
+    .horizontal {
+      display: flex;
+      background-color: lightgray;
+      border: 1px solid gray;
+      height: 45px;
+    }
+    .horizontal a {
+      padding: 10px;
+      text-decoration: none;
+      border-right: 1px solid gray;
+      color: blue;
+    }
+    .horizontal a:first-child {
+      background-color: gray;
+      color: white;
+      font-weight: bold;
+    }
+    .container{
+      display:flex;
+      align-items:flex-start;
+      gap:50px;
+    }
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+ <div class="section">
+<h3>Vertical Navigation Bar</h3>
+<div class='border-boxv'>
+<div class="vertical">
+  <a href="#">Home</a>
+  <a href="#">Java</a>
+  <a href="#">CSS</a>
+  <a href="#">HTML</a>
+  <a href="#">Bootstrap</a>
+</div>
+</div>
+</div>
+<div>
+<h3>Horizontal Navigation Bar</h3>
+<div class="border-boxh">
+<div class="horizontal">
+  <a href="#">Home</a>
+  <a href="#">Java</a>
+  <a href="#">HTML</a>
+  <a href="#">CSS</a>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
